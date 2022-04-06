@@ -6,6 +6,8 @@
 
 > This project is a technical test from my postulation to Atlantic Soft
 
+En el archivo CheckList, estaran las dificultades que se me presenten durante el desarrollo y como las solucione
+
 
 ## Instalación
 
