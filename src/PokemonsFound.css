@@ -1,0 +1,10 @@
+.pokemonsBox{
+    margin: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+.Pokemon-Card{
+    border-radius: 12px;
+    box-shadow:20px 20px 60px #bebebe ;
+}

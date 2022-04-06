@@ -1,0 +1,8 @@
+Problemas Encontrados:
+
+Ordenamiento por tipos- no existe un campo que diferencie el orden correcto de los tipos mas alla de un numero en la URL del API
+Solucion: Con el texto correspondiente de la URL, se estraen los numeros en un arreglo para obtener individualmente el numero y asi hacer una funcion Sort()
+
+Actualizacion asincrona de la caja de encontrados: en un momento del desarollo me tope con que al hacer peticiones asincronas y actualizar la caja donde se mostrara, el ReRender de la pagina hacia que no se mostrara correctamente el contenido del UseState.
+Solucion:Solo actualizar la caja del UseState cuando un condicional que verifica que ya todas las peticiones se hallan hecho se cumpla
+
