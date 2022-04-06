@@ -10,7 +10,7 @@ export default function AbilitiesSelector({abilities, setAbilitySearched}){
         content = [];
         abilities.forEach(element => {
             content.push(<div key={abilities.indexOf(element)} >
-            <span for="button" className="ability-box" onClick={clikedAbility}>
+            <span  className="ability-box" onClick={clikedAbility}>
            {element.ability.name}
             </span>
             </div>);
