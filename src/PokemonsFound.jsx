@@ -24,7 +24,7 @@ export default function PokemonsFound({abilitySearched,pokemonsBox,setPokemonsBo
                         });
                     
                     setPokemonsBox(<React.Fragment>
-                    <div key="placeholder" ptype="0"><h4>Pokemones que cuentan con la habilidad {data.name}/{data.names[5].name}</h4></div>
+                    <div key="placeholder" ptype="0" className="title"><h4>Pokemones que cuentan con la habilidad {data.name}/{data.names[5].name}</h4></div>
                     <div className="pokemonsBox">{pokesSorted}</div>
                     </React.Fragment>);
                     
