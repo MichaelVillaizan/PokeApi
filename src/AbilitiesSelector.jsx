@@ -1,5 +1,5 @@
 import React from "react";
-
+import './AbilitiesSelector.css'
 export default function AbilitiesSelector({abilities, setAbilitySearched}){
     let content = [<div key="0">Busca un Pokemon!</div>]
 
@@ -9,7 +9,11 @@ export default function AbilitiesSelector({abilities, setAbilitySearched}){
     if(abilities.length > 0){
         content = [];
         abilities.forEach(element => {
-            content.push(<div key={abilities.indexOf(element)}><a onClick={clikedAbility} className="ability-box">{element.ability.name}</a></div>);
+            content.push(<div key={abilities.indexOf(element)} >
+            <span for="button" className="ability-box" onClick={clikedAbility}>
+           {element.ability.name}
+            </span>
+            </div>);
         });
       
     }
