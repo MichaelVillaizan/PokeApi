@@ -10,12 +10,14 @@ function App() {
   const [abilities ,setAbilities] = React.useState([])
   const [abilitySearched,setAbilitySearched] = React.useState("")
   const [pokemonsBox ,setPokemonsBox] = React.useState([])
+  const [shiny ,setShiny] = React.useState("default")
   
   return (<React.Fragment>
       <Searcher
       searchValue={searchValue}
       setSearchValue={setSearchValue}
       setAbilities={setAbilities}
+      setShiny={setShiny}
       />
       <AbilitiesSelector
       abilities={abilities}
@@ -25,6 +27,7 @@ function App() {
       abilitySearched={abilitySearched}
       pokemonsBox={pokemonsBox}
       setPokemonsBox={setPokemonsBox}
+      shiny={shiny}
       />
 
       
