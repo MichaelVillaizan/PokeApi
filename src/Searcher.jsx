@@ -1,5 +1,6 @@
 import React from "react";
 import { apiRequest } from "./apiRequest";
+import "./Searcher.css";
 
 
 export default function Searcher ( {searchValue,setSearchValue,setAbilities}){
@@ -20,11 +21,13 @@ export default function Searcher ( {searchValue,setSearchValue,setAbilities}){
 
 
     return(
-        <label htmlFor="searcher" className="searcher-label" key={"searcherLabel"}>
-        <span>🔍</span>
-        <input id ="searcher" className="searcher" type="text" onChange={fetchResults }  value={searchValue}></input>
-        <button onClick={searchPoke}>Buscar!</button>
-        </label>
+        <div className="searcher-box">
+            <label htmlFor="searcher" className="searcher-label" key={"searcherLabel"}>
+                <span>🔍</span>
+                <input id ="searcher" className="searcher" type="text" onChange={fetchResults }  value={searchValue}></input>
+                <button className="search-button" onClick={searchPoke}>Buscar!</button>
+            </label>
+        </div>
 
     );
 }

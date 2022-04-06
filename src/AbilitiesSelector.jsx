@@ -1,7 +1,7 @@
 import React from "react";
 import './AbilitiesSelector.css'
 export default function AbilitiesSelector({abilities, setAbilitySearched}){
-    let content = [<div key="0">Busca un Pokemon!</div>]
+    let content = [<div key="0" className="default-text" >Busca un Pokemon!</div>]
 
     const clikedAbility = (e) =>{
         setAbilitySearched(e.target.innerHTML)
@@ -18,6 +18,6 @@ export default function AbilitiesSelector({abilities, setAbilitySearched}){
       
     }
     
-    return(content);
+    return(<div className="ability-container">{content}</div>);
 
 } 
