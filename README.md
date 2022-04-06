@@ -10,11 +10,13 @@ En el archivo CheckList, estaran las dificultades que se me presenten durante el
 
 
 ## Instalación
+> En terminal tipo linux dentro de la carpeta del projecto, ejecutamos:
 
 ```sh
 npm install
 ```
 ## inicio
+> seguido de lo anterior digitamos:
 
 ```sh
 npm start
